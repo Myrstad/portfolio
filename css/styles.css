@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    margin-top: auto;
+    text-align: center;
+}
