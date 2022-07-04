@@ -1,31 +1,37 @@
-const websiteTitle = 'Student Myrstad';
+const websiteTitle = 'Elev Myrstad';
 
 const routes = {
     404: {
         template: './templates/404.html',
         title: '404 | ' + websiteTitle,
-        description: 'Page not found'
+        description: 'Nettsiden finnes ikke'
     },
     '/': {
         template: './templates/index.html',
         title: websiteTitle,
-        description: 'This is the homepage'
+        description: 'Dette er hjemmesiden til Myrstad'
     },
     '/about': {
         template: './templates/about.html',
-        title: 'About | ' + websiteTitle,
-        description: 'This is the about page'
+        title: 'Om meg | ' + websiteTitle,
+        description: 'Dette er siden om hvem jeg er'
     },
     '/contact': {
         template: './templates/contact.html',
-        title: 'Contact | ' + websiteTitle,
-        description: 'This is the contact page'
+        title: 'Ta kontakt | ' + websiteTitle,
+        description: 'Dette er siden for å kontakte meg'
+    },
+    '/projects': {
+        template: './templates/projects.html',
+        title: 'Mine prosjekter | ' + websiteTitle,
+        description: 'Dette er siden for å vise fram prosjektene mine fra skolen'
     },
 }
 
 const locationHandler = async () => {
     let location = window.location.hash.replace("#", '');
-    console.log(location);
+    console.clear();
+    console.log(location, location.split("/"));
     if (location.length === 0) {
         location = '/'
     }
