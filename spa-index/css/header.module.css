@@ -1,0 +1,45 @@
+header {
+    min-height: 360px;
+    background-size: cover;
+    background-position: 0 50%;
+    border-radius: 4rem;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 50%;
+}
+
+
+.title h1 {
+    font-size: var(--fs-xl);
+    line-height: 1.125;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title p {
+    font-size: var(--fs-l);
+    font-weight: normal;
+    line-height: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+}
